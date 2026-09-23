@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BORIONE — Books Beyond Imagination</title>
+
+    <meta name="description" content="BORIONE — zamonaviy premium kitob platformasi">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="loader" id="loader">
+    <div class="loader-logo">
+        <span>B</span>
+        <span>O</span>
+        <span>R</span>
+        <span>I</span>
+        <span>O</span>
+        <span>N</span>
+        <span>E</span>
+    </div>
+    <div class="loader-line"></div>
+</div>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<header class="header" id="header">
+
+    <a href="#home" class="logo">
+        <span class="logo-mark">B</span>
+        <span class="logo-text">BORI<span>ONE</span></span>
+    </a>
+
+    <nav class="nav">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#books">Kitoblar</a>
+        <a href="#categories">Kategoriyalar</a>
+        <a href="#about">Biz haqimizda</a>
+    </nav>
+
+    <div class="header-actions">
+
+        <button class="icon-btn" id="searchBtn" aria-label="Qidirish">
+            <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="M20 20l-4-4"></path>
+            </svg>
+        </button>
+
+        <button class="icon-btn" id="favoriteBtn" aria-label="Sevimlilar">
+            <svg viewBox="0 0 24 24">
+                <path d="M20.8 8.8c0 5.5-8.8 10.2-8.8 10.2S3.2 14.3 3.2 8.8A4.8 4.8 0 0 1 12 6.3a4.8 4.8 0 0 1 8.8 2.5Z"></path>
+            </svg>
+            <b id="favoriteCount">0</b>
+        </button>
+
+        <button class="icon-btn" id="cartBtn" aria-label="Savatcha">
+            <svg viewBox="0 0 24 24">
+                <path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.5L21 8H6"></path>
+                <circle cx="10" cy="20" r="1"></circle>
+                <circle cx="18" cy="20" r="1"></circle>
+            </svg>
+            <b id="cartCount">0</b>
+        </button>
+
+        <button class="theme-btn" id="themeBtn">
+            ☼
+        </button>
+
+        <button class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-bg-text">BORIONE</div>
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            <span></span>
+            PREMIUM DIGITAL BOOKSTORE
+        </div>
+
+        <h1>
+            Read.
+            <em>Imagine.</em>
+            Become.
+        </h1>
+
+        <p>
+            Har bir kitob — yangi dunyo.
+            Har bir sahifa — yangi imkoniyat.
+            BORI ONE bilan o‘zingiz uchun yangi hikoyani boshlang.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#books" class="btn btn-primary">
+                Kitoblarni ko‘rish
+                <span>↗</span>
+            </a>
+
+            <a href="#categories" class="btn btn-outline">
+                Kategoriyalar
+            </a>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <strong>2K+</strong>
+                <span>Kitoblar</span>
+            </div>
+
+            <div>
+                <strong>50K+</strong>
+                <span>O‘quvchilar</span>
+            </div>
+
+            <div>
+                <strong>4.9</strong>
+                <span>Reyting</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="hero-book-area">
+
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+
+        <div class="floating-word">KNOWLEDGE</div>
+
+        <div class="hero-book">
+
+            <div class="book-glow"></div>
+
+            <div class="book-cover">
+
+                <div class="book-top">
+                    BORIONE
+                </div>
+
+                <div class="book-center">
+                    <small>THE ART OF</small>
+                    <h2>READING</h2>
+                    <div class="book-line"></div>
+                    <p>Explore • Learn • Grow</p>
+                </div>
+
+                <div class="book-bottom">
+                    BORI ONE EDITION
+                </div>
+
+            </div>
+
+            <div class="book-side"></div>
+
+        </div>
+
+        <div class="floating-card rating-card">
+            <span>★★★★★</span>
+            <strong>4.9</strong>
+            <small>Readers rating</small>
+        </div>
+
+        <div class="floating-card pages-card">
+            <strong>01</strong>
+            <small>Begin your story</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="marquee-section">
+    <div class="marquee">
+        <span>READ MORE</span>
+        <i>✦</i>
+        <span>THINK MORE</span>
+        <i>✦</i>
+        <span>LIVE MORE</span>
+        <i>✦</i>
+        <span>BORIONE</span>
+        <i>✦</i>
+        <span>READ MORE</span>
+        <i>✦</i>
+    </div>
+</section>
+
+
+<section class="section" id="books">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-number">01 / COLLECTION</span>
+            <h2>Tanlangan <em>kitoblar</em></h2>
+        </div>
+
+        <p>
+            Eng ko‘p o‘qilayotgan va o‘quvchilarimiz
+            tomonidan tanlangan kitoblar.
+        </p>
+
+    </div>
+
+
+    <div class="books-toolbar">
+
+        <div class="filters">
+
+            <button class="filter active" data-category="all">
+                Barchasi
+            </button>
+
+            <button class="filter" data-category="fiction">
+                Fiction
+            </button>
+
+            <button class="filter" data-category="business">
+                Business
+            </button>
+
+            <button class="filter" data-category="science">
+                Science
+            </button>
+
+            <button class="filter" data-category="history">
+                History
+            </button>
+
+        </div>
+
+        <select id="sortSelect">
+            <option value="default">Saralash</option>
+            <option value="low">Narx: arzon → qimmat</option>
+            <option value="high">Narx: qimmat → arzon</option>
+            <option value="rating">Reyting bo‘yicha</option>
+        </select>
+
+    </div>
+
+
+    <div class="books-grid" id="booksGrid"></div>
+
+    <div class="load-more-wrapper">
+        <button class="load-more" id="loadMore">
+            Ko‘proq kitoblar
+            <span>↓</span>
+        </button>
+    </div>
+
+</section>
+
+
+<section class="categories-section" id="categories">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-number">02 / EXPLORE</span>
+            <h2>O‘z <em>olamingizni</em> tanlang</h2>
+        </div>
+
+    </div>
+
+
+    <div class="categories-grid">
+
+        <div class="category-card large" data-category="fiction">
+            <div class="category-bg">01</div>
+            <div class="category-content">
+                <span>01</span>
+                <h3>Fiction</h3>
+                <p>Hikoyalar, romanlar va tasavvur olami</p>
+                <b>→</b>
+            </div>
+        </div>
+
+        <div class="category-card" data-category="business">
+            <div class="category-bg">02</div>
+            <div class="category-content">
+                <span>02</span>
+                <h3>Business</h3>
+                <p>Biznes va rivojlanish</p>
+                <b>→</b>
+            </div>
+        </div>
+
+        <div class="category-card" data-category="science">
+            <div class="category-bg">03</div>
+            <div class="category-content">
+                <span>03</span>
+                <h3>Science</h3>
+                <p>Fan va texnologiya</p>
+                <b>→</b>
+            </div>
+        </div>
+
+        <div class="category-card" data-category="history">
+            <div class="category-bg">04</div>
+            <div class="category-content">
+                <span>04</span>
+                <h3>History</h3>
+                <p>Tarix va insoniyat</p>
+                <b>→</b>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="quote-section">
+
+    <div class="quote-mark">“</div>
+
+    <blockquote>
+        A room without books is like a body
+        without a soul.
+    </blockquote>
+
+    <span>— Marcus Tullius Cicero</span>
+
+</section>
+
+
+<section class="offer-section">
+
+    <div class="offer-content">
+
+        <span class="offer-label">BORIONE SPECIAL</span>
+
+        <h2>
+            Birinchi xaridingizga
+            <strong>20% chegirma.</strong>
+        </h2>
+
+        <p>
+            BORIONE oilasiga qo‘shiling va birinchi kitobingizni
+            maxsus narxda xarid qiling.
+        </p>
+
+        <div class="offer-code">
+            <span id="discountCode">BORIONE20</span>
+            <button id="copyCode">COPY</button>
+        </div>
+
+    </div>
+
+    <div class="offer-circle">
+        <span>20%</span>
+        <small>OFF</small>
+    </div>
+
+</section>
+
+
+<section class="about-section" id="about">
+
+    <div class="about-image">
+
+        <div class="image-box">
+            <div class="image-letter">B</div>
+            <div class="image-label">BORI ONE</div>
+        </div>
+
+    </div>
+
+    <div class="about-content">
+
+        <span class="section-number">03 / ABOUT US</span>
+
+        <h2>
+            Biz kitobni
+            <em>shunchaki</em>
+            sotmaymiz.
+        </h2>
+
+        <p>
+            BORIONE — kitob o‘qishni zamonaviy, chiroyli va
+            ilhomlantiruvchi tajribaga aylantirish uchun yaratilgan
+            platforma.
+        </p>
+
+        <p>
+            Bizning maqsadimiz — yaxshi kitoblarni ko‘proq odamlar
+            bilan bog‘lash.
+        </p>
+
+        <a href="#books" class="text-link">
+            Bizning kolleksiyamiz
+            <span>↗</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="newsletter">
+
+    <div class="newsletter-inner">
+
+        <span class="section-number">STAY INSPIRED</span>
+
+        <h2>
+            Yangi kitoblar haqida
+            <em>birinchi bo‘lib</em> bilib oling.
+        </h2>
+
+        <form id="newsletterForm">
+
+            <input
+                type="email"
+                id="emailInput"
+                placeholder="Email manzilingiz"
+                required
+            >
+
+            <button type="submit">
+                Obuna bo‘lish →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+                <span class="logo-mark">B</span>
+                <span class="logo-text">BORI<span>ONE</span></span>
+            </a>
+
+            <p>
+                Read. Imagine. Become.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <div>
+                <h4>Explore</h4>
+                <a href="#books">Kitoblar</a>
+                <a href="#categories">Kategoriyalar</a>
+                <a href="#about">Biz haqimizda</a>
+            </div>
+
+            <div>
+                <h4>Help</h4>
+                <a href="#">Yetkazib berish</a>
+                <a href="#">To‘lov</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div>
+                <h4>Social</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Telegram</a>
+                <a href="#">YouTube</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 BORIONE</span>
+        <span>Made with passion for readers.</span>
+    </div>
+
+</footer>
+
+
+<div class="search-overlay" id="searchOverlay">
+
+    <button class="close-overlay" id="closeSearch">×</button>
+
+    <div class="search-container">
+
+        <span>SEARCH BORIONE</span>
+
+        <input
+            type="text"
+            id="globalSearch"
+            placeholder="Kitob nomini yozing..."
+            autocomplete="off"
+        >
+
+        <div id="searchResults"></div>
+
+    </div>
+
+</div>
+
+
+<div class="overlay" id="overlay"></div>
+
+
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+        <div>
+            <span>CART</span>
+            <h2>Savatcha</h2>
+        </div>
+
+        <button id="closeCart">×</button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>Jami</span>
+            <strong id="cartTotal">0 so‘m</strong>
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+            Xaridni davom ettirish →
+        </button>
+
+    </div>
+
+</aside>
+
+
+<div class="modal" id="bookModal">
+
+    <div class="modal-box">
+
+        <button class="modal-close" id="closeBookModal">×</button>
+
+        <div id="bookDetails"></div>
+
+    </div>
+
+</div>
+
+
+<div class="modal" id="loginModal">
+
+    <div class="modal-box login-box">
+
+        <button class="modal-close" id="closeLogin">×</button>
+
+        <div class="login-logo">
+            <span>B</span>
+        </div>
+
+        <span class="section-number">WELCOME TO BORIONE</span>
+
+        <h2>Kirish</h2>
+
+        <p>
+            BORIONE hisobingizga kiring.
+        </p>
+
+        <form id="loginForm">
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Email"
+                required
+            >
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Parol"
+                required
+            >
+
+            <button type="submit">
+                Kirish →
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<div class="toast" id="toast">
+
+    <div class="toast-icon">✓</div>
+
+    <div>
+        <strong id="toastTitle">Tayyor!</strong>
+        <p id="toastText">Amal bajarildi.</p>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
